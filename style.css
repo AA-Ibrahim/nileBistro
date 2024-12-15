@@ -1,22 +1,117 @@
+:root {
+    --primary-color: #005F6A;
+    --secondary-color: #F8F4E3;
+    --accent-color: #D96A24;
+    --gold-color: #CFAE60;
+    --text-dark: #333333;
+    --text-medium: #666666;
+}
+
 body {
-    background-color: black;
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+    color: var(--text-dark);
+    background-color: var(--secondary-color);
 }
 
-h1 {
+header {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .logo {
+    max-width: 80px;
+    margin-bottom: 15px;
+}
+
+nav {
+    margin: 20px 0;
     text-align: center;
-    color: white;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-h2 {
+nav a {
+    color: var(--secondary-color);
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 1.2rem;
+}
+
+.hero {
+    position: relative;
+    background-image: url('images/hero.JPG');
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    color: var(--secondary-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
     text-align: center;
-    color: white;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 40%;
+.hero h2 {
+    font-size: 2rem;
+    margin: 0;
+}
+
+.hero button {
+    background-color: var(--accent-color);
+    color: var(--secondary-color);
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+
+.deals {
+    padding: 40px;
+    text-align: center;
+}
+
+.deals-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.deals h3 {
+    font-family: 'Playfair Display', serif;
+    color: var(--primary-color);
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.deal-card {
+    background-color: var(--secondary-color);
+    border: 2px solid var(--gold-color);
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 300px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.deal-card h4 {
+    color: var(--accent-color);
+    margin: 0 0 10px 0;
+}
+
+.footer {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    padding: 20px;
+    text-align: center;
+}
+
+.footer a {
+    color: var(--gold-color);
+    text-decoration: none;
+    margin: 0 10px;
 }
