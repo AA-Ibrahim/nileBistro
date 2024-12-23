@@ -1,22 +1,11 @@
-/* CSS HEX 
---crimson: #d02436ff;
---bronze: #dd822dff;
---royal-blue-traditional: #19256cff;
---castleton-green: #08593dff;
---citrine: #e8cb27ff;
-*/
-
 :root {
-    --bg-color: #19256cff;
-    --btnTxt-color: rgb(228, 53, 70);
-    --ltTxt-color: #faece1;
-    --dkTxt-color: rgb(228, 183, 37);
-    --accent-color: #08593dff;
-    --btn-color: #dd822dff;
+    --gold: #D4AF37;
+    --beige: #EAD7BD;
+    --black: #000000;
 }
 
 body {
-    background-color: var(--ltTxt-color);
+    background-color: var(--beige);
 }
 
 #hero {
